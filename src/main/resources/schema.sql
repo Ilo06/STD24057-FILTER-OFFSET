@@ -2,7 +2,7 @@ CREATE TABLE Product(
     id int primary key,
     name varchar,
     price float,
-    creation_datetime timestamp,
+    creation_datetime timestamp
 );
 
 CREATE TABLE Product_category(
