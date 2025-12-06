@@ -10,7 +10,7 @@ import java.sql.SQLException;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class DBConnection {
-    public Connection getDBConnection(){
+    public static Connection getDBConnection(){
         String url = "jdbc:postgresql://localhost:5432/product_management_db";
         String user = "product_manager_user";
         String password = "123456";
