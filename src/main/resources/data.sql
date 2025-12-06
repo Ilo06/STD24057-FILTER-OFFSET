@@ -1,4 +1,4 @@
-INSERT INTO Product(id, name,price, product_id) VALUES
+INSERT INTO Product(id, name,price, product_id, creation_datetime) VALUES
 (1, 'Laptop Dell XPS', 4500.0, 1, 2024-01-15 09:30:00),
 (2, 'Iphone 13', 5200.0, 2, 2024-02-01 14:10:00),
 (3, 'Casque Sony WH1000', 890.50, 3, 2024-02-10 16:45:00),
