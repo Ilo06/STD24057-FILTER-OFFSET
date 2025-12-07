@@ -10,18 +10,18 @@ import java.sql.SQLException;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class DBConnection {
-    public static Connection getDBConnection(){
+    public static Connection getDBConnection() {
         String url = "jdbc:postgresql://localhost:5432/product_management_db";
         String user = "product_manager_user";
         String password = "123456";
 
-        try (Connection connection = DriverManager.getConnection(url, user, password);){
+        try {
+            Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("Connected to the database");
-            return connection;
-
-        }catch (SQLException e){
+            return connection;  // ✔️ la connexion reste OUVERTE
+        } catch (SQLException e) {
             e.printStackTrace();
+            return null;
         }
-        return null;
     }
 }
