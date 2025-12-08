@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataRetriever {
+    DBConnection DBConnection = new DBConnection();
     Connection connection = DBConnection.getDBConnection();
 
     public List<Category> getAllCategories() throws SQLException {
