@@ -1,14 +1,8 @@
-import lombok.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
-@AllArgsConstructor
 public class DBConnection {
     public Connection getDBConnection() {
         String url = "jdbc:postgresql://localhost:5432/product_management_db";
